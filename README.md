@@ -5,7 +5,7 @@ run across the fleet. Four plugins, one folder each:
 
 | Plugin | What it covers | Front door |
 | :--- | :--- | :--- |
-| `cl-claude/` | Runbooks written for Claude Code: omnicode, land-lanes, OpenCode Go dispatch, Claude lane lessons | [`cl-claude/SKILL.md`](cl-claude/SKILL.md) |
+| `cl-claude/` | Runbooks written for Claude Code: omnicode, OpenCode Go dispatch, Claude lane lessons | [`cl-claude/SKILL.md`](cl-claude/SKILL.md) |
 | `cl-orchestration/` | Fleet orchestration: dispatch modes, backlog, epic worktrees, hub/sub hand-offs | [`cl-orchestration/SKILL.md`](cl-orchestration/SKILL.md) |
 | `cl-opencode/` | OpenCode runtime: config and database checks, recovery | [`cl-opencode/SKILL.md`](cl-opencode/SKILL.md) |
 | `cl-paseo/` | Paseo daemon, agents, workspaces, health and repair | [`cl-paseo/SKILL.md`](cl-paseo/SKILL.md) |
