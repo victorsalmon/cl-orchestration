@@ -1,0 +1,38 @@
+{
+  "name": "cl-paseo",
+  "version": "1.1.0+codex.20260926",
+  "description": "Use when dispatching or supervising Paseo agents: attached background subagents, detached workers that survive chat, agent personas, or the brief-report-ping handshake teams use to report back. This plugin is the front door for the Paseo agent family; pick the member below that matches the task and load only that one.",
+  "author": {
+    "name": "Clock Lobster"
+  },
+  "license": "MIT",
+  "keywords": [
+    "paseo",
+    "subagent",
+    "dispatch",
+    "worker",
+    "detached",
+    "attached",
+    "handshake",
+    "personas",
+    "supervision"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clock Lobster Paseo Agents",
+    "shortDescription": "Paseo Agents",
+    "longDescription": "Packages the fleet's Paseo agent runbooks: attached background subagent dispatch, detached workers that survive the user's next message with parentage repair, agent personas, and the brief-report-ping handshake worker teams use to report back.",
+    "developerName": "Clock Lobster",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Execute"
+    ],
+    "defaultPrompt": [
+      "Dispatch a background subagent for this task.",
+      "Dispatch a detached worker that survives chat.",
+      "A worker vanished from the child list — diagnose it."
+    ]
+  }
+}

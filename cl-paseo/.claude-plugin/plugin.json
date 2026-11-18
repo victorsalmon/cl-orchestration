@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "cl-paseo",
+  "version": "1.1.0",
+  "description": "Unified Paseo plugin: agent dispatch (attached/detached), concurrency caps, code-first health checks (Test-PaseoHealth), automatic repair (Repair-PaseoHealth), configuration integrity, and host rescue.",
+  "author": {
+    "name": "Clock Lobster"
+  },
+  "license": "MIT",
+  "keywords": [
+    "paseo",
+    "subagent",
+    "dispatch",
+    "worker",
+    "detached",
+    "attached",
+    "troubleshoot",
+    "health",
+    "diagnostics",
+    "rescue",
+    "config"
+  ],
+  "category": "development",
+  "skills": "skills"
+}

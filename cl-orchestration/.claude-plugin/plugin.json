@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "cl-orchestration",
+  "version": "1.0.0",
+  "description": "Use when driving multi-agent work: orchestrating a run, dispatching background subagents or detached Paseo workers, moving plans through the queue, recording manual tasks, or pairing interactively with the user. This plugin is the front door for orchestration on this machine. Covers the top-level coordinating role, the subagent dispatch contract, detached child agents and parentage repair, the human-driven pipeline, queue/task records, the Devin review drain, and cowork pair-work with its handoff tooling.",
+  "author": {
+    "name": "Clock Lobster"
+  },
+  "license": "MIT",
+  "keywords": [
+    "orchestration",
+    "orchestrator",
+    "subagent",
+    "dispatch",
+    "paseo",
+    "worker",
+    "queue",
+    "tasks",
+    "review",
+    "cowork"
+  ],
+  "category": "Multi-Agent Orchestration",
+  "skills": "skills"
+}

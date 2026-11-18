@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "plugin": "cl-claude",
+    "updated": "2026-11-18",
+    "generator": "Gen-SkillsIndex.ps1 (frontmatter name/description)",
+    "description": "Member index for this plugin (Layer 2). Read the plugin SKILL.md runbook first, then load only the member the task needs."
+  },
+  "members": [
+    {
+      "name": "claude-lane-lessons",
+      "description": "Durable Claude-specific lessons for running lanes, notifications and hand-overs, each as a short rule, the reason, and the check that proves it (from the 2026-11-14/15 currents-bookkeeping epic session). Use before di...",
+      "path": "vendor/cl-orchestration/cl-claude/skills/claude-lane-lessons",
+      "entry": "vendor/cl-orchestration/cl-claude/skills/claude-lane-lessons/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "omnicode",
+      "description": "/omnicode - claim a set of beads, complete them in a massively parallel fashion on multiple worktrees, batch-merge the lane branches into one gated batch branch, then send a high-priority merge request to the hub in c...",
+      "path": "vendor/cl-orchestration/cl-claude/skills/omnicode",
+      "entry": "vendor/cl-orchestration/cl-claude/skills/omnicode/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "opencode-go-dispatch",
+      "description": "How Claude dispatches work to OpenCode Go workers through Paseo with round-robin key rotation, instead of doing the hands-on work in its own context or in Claude Code's own subagents. Use when Claude must hand a bound...",
+      "path": "vendor/cl-orchestration/cl-claude/skills/opencode-go-dispatch",
+      "entry": "vendor/cl-orchestration/cl-claude/skills/opencode-go-dispatch/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    }
+  ]
+}

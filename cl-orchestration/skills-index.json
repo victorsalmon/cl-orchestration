@@ -1,0 +1,138 @@
+{
+  "_meta": {
+    "plugin": "cl-orchestration",
+    "updated": "2026-11-18",
+    "generator": "Gen-SkillsIndex.ps1 (frontmatter name/description)",
+    "description": "Member index for this plugin (Layer 2). Read the plugin SKILL.md runbook first, then load only the member the task needs."
+  },
+  "members": [
+    {
+      "name": "active-history",
+      "description": "Per-repo running record of what actually happened, so an unattended session does not bury its work in chat. Append-only event log with a delta view: completions, problems caught and fixed, problems not fixed (with why...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/active-history",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/active-history/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\active-history\\SKILL.md"
+    },
+    {
+      "name": "completion-checklist",
+      "description": "Completion Checklist — finish remaining session work via detached subagents, then update docs, update tests, update skills, run the Repo Clean pre-commit hygiene slice, modular semantic commits, push branch, build the...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/completion-checklist",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/completion-checklist/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\completion-checklist\\SKILL.md"
+    },
+    {
+      "name": "cowork",
+      "description": "Cowork role workflow — interactive pair-work with user, prototype and perfect, record findings, write handoff.",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/cowork",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/cowork/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\cowork\\SKILL.md"
+    },
+    {
+      "name": "cowork-tooling",
+      "description": "Runbook for the current cowork utility scripts and handoff artifacts.",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/cowork-tooling",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/cowork-tooling/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\cowork-tooling\\SKILL.md"
+    },
+    {
+      "name": "epic-worktree",
+      "description": "Build one epic on a private integration root (`epic/<name>`) with a swarm of phase-forked lanes, gate the composed epic once, and land it on `dev` once.",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/epic-worktree",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/epic-worktree/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\epic-worktree\\SKILL.md"
+    },
+    {
+      "name": "expert-dispatch",
+      "description": "Dispatch an \"expert\" model (Sol 6.1 on high, Opus 5.5 on xhigh) on a token-metered, diff-only contract - a fixed list of files to read, the decisions already made, one task, output as ONE unified diff plus a DONE.json...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/expert-dispatch",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/expert-dispatch/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\expert-dispatch\\SKILL.md"
+    },
+    {
+      "name": "handoff",
+      "description": "Route and triage handoff records. TWO queues, chosen by SCOPE: a repo-scoped handoff (bead ids, branch SHAs, product decisions for one graph) lives in `<repo>/Tasks/00Handoff/`; a MACHINE-scoped handoff (absolute path...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/handoff",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/handoff/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\handoff\\SKILL.md"
+    },
+    {
+      "name": "manual-orchestration",
+      "description": "Manually drive a repository's Salmon Run backlog through the remaining pipeline stages (Code → Review → Maintain → QA → Merge → Complete) with subagents, parking every taken plan in the Handoff queue under a generated...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/manual-orchestration",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/manual-orchestration/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\saas-common\\manual-orchestration\\SKILL.md"
+    },
+    {
+      "name": "orchestrator",
+      "description": "Coordinate a repository backlog through the current IQA Hub and beads workflow.",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/orchestrator",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/orchestrator/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\work-now\\SKILL.md"
+    },
+    {
+      "name": "paseo-child-agents",
+      "description": "Dispatch Paseo workers as detached background child agents that survive the user's next message, and keep them visible in the parent's child list. Covers the `paseo run -d` dispatch, why a chat-coupled dispatch is can...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/paseo-child-agents",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/paseo-child-agents/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\paseo-child-agents\\SKILL.md"
+    },
+    {
+      "name": "sol-handoff",
+      "description": "Create and receive a Sol 6.1 review/decision work packet as one self-contained markdown handoff with an embedded copy-button prompt, sized to a token budget below Sol's 272K long-context price step. Use when handing t...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/sol-handoff",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/sol-handoff/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\sol-handoff\\SKILL.md"
+    },
+    {
+      "name": "subagent-dispatch",
+      "description": "Dispatch background subagents from a Paseo-driven OpenCode session so the main window stays interactive — create agents with background mode and finish notification, brief them durably, and never block on a worker. Th...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/subagent-dispatch",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/subagent-dispatch/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\vendor\\interactive-qa\\members\\dispatch\\SKILL.md"
+    },
+    {
+      "name": "subagent-status",
+      "description": "Report session task/bead to subagent mapping on demand — list every task and bead created this session with queued / with-subagent / done status plus live subagent state. Use when user says \"Subagent Status\" or asks w...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/subagent-status",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/subagent-status/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\subagent-status\\SKILL.md"
+    },
+    {
+      "name": "task-management",
+      "description": "review-manual-tasks.",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/task-management",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/task-management/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\task-management\\SKILL.md"
+    },
+    {
+      "name": "unblock",
+      "description": "Interrogate the agent's own uncertainty to unblock work — map every uncertain surface of the goal through grill-me batch rounds, separate what only the user can provide (API tokens, credentials, IAM permissions, accou...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/unblock",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/unblock/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\unblock\\SKILL.md"
+    },
+    {
+      "name": "work-report",
+      "description": "Produce the operator's Work Report: for the last N days (default 7), grouped into 24-hour periods in America/Vancouver, show which features were worked on, the completeness percentage each one started the period at, h...",
+      "path": "vendor/cl-orchestration/cl-orchestration/skills/work-report",
+      "entry": "vendor/cl-orchestration/cl-orchestration/skills/work-report/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\work-report\\SKILL.md"
+    }
+  ]
+}

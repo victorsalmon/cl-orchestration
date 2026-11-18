@@ -1,0 +1,39 @@
+{
+  "name": "cl-orchestration",
+  "version": "1.0.0+codex.20260923",
+  "description": "Use when driving multi-agent work: orchestrating a run, dispatching background subagents or detached Paseo workers, moving plans through the queue, recording manual tasks, or pairing interactively with the user. This plugin is the front door for orchestration on this machine. Covers the top-level coordinating role, the subagent dispatch contract, detached child agents and parentage repair, the human-driven pipeline, queue/task records, the Devin review drain, and cowork pair-work with its handoff tooling.",
+  "author": {
+    "name": "Clock Lobster"
+  },
+  "license": "MIT",
+  "keywords": [
+    "orchestration",
+    "orchestrator",
+    "subagent",
+    "dispatch",
+    "paseo",
+    "worker",
+    "queue",
+    "tasks",
+    "review",
+    "cowork"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clock Lobster Orchestration",
+    "shortDescription": "Orchestration",
+    "longDescription": "Packages the fleet's orchestration runbooks: the top-level orchestrator role and engine entrypoints, the background subagent dispatch contract, detached Paseo child agents with per-harness mechanics and parentage repair, the human-driven manual pipeline, task records and queue mechanics, the Devin Review-to-QA drain, and interactive cowork pair-work with its handoff tooling.",
+    "developerName": "Clock Lobster",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Execute"
+    ],
+    "defaultPrompt": [
+      "Dispatch background subagents for this work.",
+      "Drive this repo's backlog through the pipeline.",
+      "Start a cowork session with me."
+    ]
+  }
+}

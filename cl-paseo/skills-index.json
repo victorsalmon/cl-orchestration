@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "plugin": "cl-paseo",
+    "updated": "2026-11-18",
+    "generator": "Gen-SkillsIndex.ps1 (frontmatter name/description)",
+    "description": "Member index for this plugin (Layer 2). Read the plugin SKILL.md runbook first, then load only the member the task needs."
+  },
+  "members": [
+    {
+      "name": "agent-spawn-capacity",
+      "description": "Per-key-set concurrency caps, model failover, and the provider-error log for every Paseo agent spawn (attached or detached). Owns the numbers — opencode-go 6 agents across both routes, gemini 4, devin 2 when enabled, ...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/agent-spawn-capacity",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/agent-spawn-capacity/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\agent-spawn-capacity\\SKILL.md"
+    },
+    {
+      "name": "agent-unarchive",
+      "description": "Recover a Paseo project, workspace or agent that was archived or deleted by accident, and re-establish the work that was running under it. Covers what actually survives an archive (agent records, opencode session ids,...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/agent-unarchive",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/agent-unarchive/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "appraise-llm",
+      "description": "Appraise new and existing LLMs — research benchmarks, pricing, features, and produce comparison tables. Use when asked to appraise, evaluate, compare, review, or audit LLMs.",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/appraise-llm",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/appraise-llm/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\appraise-llm\\SKILL.md"
+    },
+    {
+      "name": "cheepseek",
+      "description": "Operation CheepSeek — cost-optimized DeepSeek V4.1 Flash routing and prompt-cache discipline. Free Zen lane (opencode/deepseek-v4.1-flash-free, 200K in / 128K out billing guardrails) first, paid Go lane (opencode-go/d...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/cheepseek",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/cheepseek/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\cheepseek\\SKILL.md"
+    },
+    {
+      "name": "dispatch-round-robin",
+      "description": "Dispatch OpenCode Go workers by live key load and quota headroom, using a persisted round-robin cursor for ties.",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/dispatch-round-robin",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/dispatch-round-robin/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\dispatch-round-robin\\SKILL.md"
+    },
+    {
+      "name": "dispatch-waterfall",
+      "description": "Waterfall Ponds dispatch strategy - fill each key to its per-key cap before spilling to the next, in pool order.",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/dispatch-waterfall",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/dispatch-waterfall/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\dispatch-waterfall\\SKILL.md"
+    },
+    {
+      "name": "openclaw-agent",
+      "description": "OpenClaw project initiation and agent personas.",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/openclaw-agent",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/openclaw-agent/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\openclaw-agent\\SKILL.md"
+    },
+    {
+      "name": "paseo-child-agents",
+      "description": "Dispatch Paseo workers as detached background child agents that survive the user's next message, and keep them visible in the parent's child list. Covers the `paseo run -d` dispatch, why a chat-coupled dispatch is can...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/paseo-child-agents",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/paseo-child-agents/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\paseo-child-agents\\SKILL.md"
+    },
+    {
+      "name": "paseo-config",
+      "description": "Manage and repair ~/.paseo/config.json, provider model mappings, environment pins, and runtime isolation. Enforces Paseo v0.15.1 schema constraints where custom provider environment variables require isolated server i...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/paseo-config",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/paseo-config/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "paseo-rescue",
+      "description": "Canonical Paseo rescue and credential re-pinning track. Repairs Paseo's OpenCode and DeepSeek Harness providers via Repair-Paseo.ps1 (classifies BINARY, NAME, WEDGE, KEY; on Paseo &lt; v0.15.3 pins provider env in ~/....",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/paseo-rescue",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/paseo-rescue/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "paseo-troubleshoot",
+      "description": "Code-first diagnostic and health assessment for the Paseo installation on Windows. Executes modular invariant probes covering daemon liveness, lockfile integrity, OpenCode shared-service collision, Electron environmen...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/paseo-troubleshoot",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/paseo-troubleshoot/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "subagent-dispatch",
+      "description": "Dispatch background subagents from a Paseo-driven OpenCode session so the main window stays interactive — create agents with background mode and finish notification, brief them durably, and never block on a worker. Th...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/subagent-dispatch",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/subagent-dispatch/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\vendor\\interactive-qa\\members\\dispatch\\SKILL.md"
+    }
+  ]
+}
