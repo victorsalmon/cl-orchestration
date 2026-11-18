@@ -60,6 +60,7 @@ Read this table, pick **one** member, and load only that member's runbook:
 | **Paseo host rescue**: pin pool keys, restart workers/app, classify BINARY/NAME/WEDGE/KEY | `paseo-rescue` | `vendor/cl-orchestration/cl-paseo/skills/paseo-rescue/SKILL.md` |
 | **Configuration integrity**: `~/.paseo/config.json`, provider isolation, and backups | `paseo-config` | `vendor/cl-orchestration/cl-paseo/skills/paseo-config/SKILL.md` |
 | **S4U boot task repair** & unattended reboot survival | `paseo-boot` | `vendor/cl-orchestration/cl-paseo/REFERENCE.md` & `scripts/Fix-PaseoBootTask.ps1` |
+| **Update Check**: after a Paseo upgrade or restart, prove the CLI surface, config schema, model pins, records, dispatch, scripts, tests, skill pointers, boot tasks and MCP wiring still work, and record the version transition | `update-check` | `$env:CL_REPOS_ROOT\cl-common\Skills\update-check\SKILL.md` |
 | **OpenCode database and disk pressure** | owned by `cl-harness` → `cl-opencode` | `$env:CL_REPOS_ROOT\cl-common\vendor\cl-orchestration\cl-opencode\SKILL.md` |
 | **Archived / deleted project, workspace or agent recovery**: what survives an archive, orphaned-workspace restoration, preserving uncommitted lane work, the claim/registry takeover an adopting Hub must perform, and the "already has an active turn" collision | `agent-unarchive` | `vendor/cl-orchestration/cl-paseo/skills/agent-unarchive/SKILL.md` |
 

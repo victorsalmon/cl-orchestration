@@ -101,6 +101,14 @@
       "entry": "vendor/cl-orchestration/cl-paseo/skills/subagent-dispatch/SKILL.md",
       "status": "pointer",
       "canonical": "$env:CL_REPOS_ROOT\\cl-common\\vendor\\interactive-qa\\members\\dispatch\\SKILL.md"
+    },
+    {
+      "name": "update-check",
+      "description": "Paseo Update Check - thin pointer to the canonical battery that proves a Paseo upgrade did not break the fleet.",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/update-check",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/update-check/SKILL.md",
+      "status": "pointer",
+      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\update-check\\SKILL.md"
     }
   ]
 }
