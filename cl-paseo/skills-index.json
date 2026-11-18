@@ -103,12 +103,12 @@
       "canonical": "$env:CL_REPOS_ROOT\\cl-common\\vendor\\interactive-qa\\members\\dispatch\\SKILL.md"
     },
     {
-      "name": "update-check",
-      "description": "Paseo Update Check - thin pointer to the canonical battery that proves a Paseo upgrade did not break the fleet.",
-      "path": "vendor/cl-orchestration/cl-paseo/skills/update-check",
-      "entry": "vendor/cl-orchestration/cl-paseo/skills/update-check/SKILL.md",
-      "status": "pointer",
-      "canonical": "$env:CL_REPOS_ROOT\\cl-common\\Skills\\update-check\\SKILL.md"
+      "name": "update-paseo",
+      "description": "The Paseo update runbook behind `Update Check`: after any Paseo upgrade or a restart that followed one, run the 17-row battery that proves the fleet's CLI surface, config schema, provider/model pins, stored records, c...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/update-paseo",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/update-paseo/SKILL.md",
+      "status": "inline",
+      "canonical": null
     }
   ]
 }
