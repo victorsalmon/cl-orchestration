@@ -1,7 +1,7 @@
 #Requires -Version 7.0
 <#
 .SYNOPSIS
-    Pure helpers for the Update Check battery (Test-UpdateCheck.ps1).
+    Pure helpers for the Update Paseo runbook (Test-UpdatePaseo.ps1).
 
 .DESCRIPTION
     Everything here is deterministic and side-effect free so it can be unit
@@ -18,7 +18,7 @@
       * Format-UpdateCheckReport       - the console table
 
     No function here calls paseo or touches the network. The orchestration of
-    live checks lives in ../Test-UpdateCheck.ps1.
+    live checks lives in ../Test-UpdatePaseo.ps1.
 #>
 
 

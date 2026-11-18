@@ -8,7 +8,7 @@
     surface, scanning the fleet for invocations, classifying a stale flag,
     the shared-service env rule, record parsing, verdict aggregation and the
     report. The live half (daemon, providers, canary) is proven by running
-    Test-UpdateCheck.ps1 itself.
+    Test-UpdatePaseo.ps1 itself.
 
     Each test pins a decision the run depends on:
 
