@@ -101,6 +101,14 @@
       "entry": "vendor/cl-orchestration/cl-paseo/skills/subagent-dispatch/SKILL.md",
       "status": "pointer",
       "canonical": "$env:CL_REPOS_ROOT\\cl-common\\vendor\\interactive-qa\\members\\dispatch\\SKILL.md"
+    },
+    {
+      "name": "update-paseo",
+      "description": "The Paseo update runbook behind `Update Check`: after any Paseo upgrade or a restart that followed one, run the 17-row battery that proves the fleet's CLI surface, config schema, provider/model pins, stored records, c...",
+      "path": "vendor/cl-orchestration/cl-paseo/skills/update-paseo",
+      "entry": "vendor/cl-orchestration/cl-paseo/skills/update-paseo/SKILL.md",
+      "status": "inline",
+      "canonical": null
     }
   ]
 }
