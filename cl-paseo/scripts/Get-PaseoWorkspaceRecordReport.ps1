@@ -107,6 +107,10 @@ function Resolve-PaseoCli {
     param([string]$Override)
     if (-not [string]::IsNullOrWhiteSpace($Override)) { return $Override }
     $command = Get-Command paseo -ErrorAction SilentlyContinue
+    # Two paseo executables can exist (npm shim + desktop app); .Source on that
+    # array joins both paths with a space, which no caller can execute. Take ONE,
+    # preferring a shim. Measured 2026-11-18: broke paseo ls and every hub keeper.
+    $command = @($command) | Where-Object { $_.Source -match '\.(cmd|bat|ps1)$' } | Select-Object -First 1
     if ($command) { return $command.Source }
     $roots = @($env:ProgramFiles, ${env:ProgramFiles(x86)}, (Join-Path $env:LOCALAPPDATA 'Programs')) |
         Where-Object { -not [string]::IsNullOrWhiteSpace($_) }

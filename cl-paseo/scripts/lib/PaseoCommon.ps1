@@ -6,6 +6,10 @@ function Resolve-PaseoCli {
     param([string]$Explicit)
     if ($Explicit -and (Test-Path -LiteralPath $Explicit)) { return $Explicit }
     $cmd = Get-Command paseo -ErrorAction SilentlyContinue
+    # Two paseo executables can exist (npm shim + desktop app); .Source on that
+    # array joins both paths with a space, which no caller can execute. Take ONE,
+    # preferring a shim. Measured 2026-11-18: broke paseo ls and every hub keeper.
+    $cmd = @($cmd) | Where-Object { $_.Source -match '\.(cmd|bat|ps1)$' } | Select-Object -First 1
     if ($cmd) { return $cmd.Source }
     $fallback = 'C:\Program Files\Paseo\resources\bin\paseo.cmd'
     if (Test-Path -LiteralPath $fallback) { return $fallback }
