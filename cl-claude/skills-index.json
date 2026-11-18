@@ -1,7 +1,7 @@
 {
   "_meta": {
     "plugin": "cl-claude",
-    "updated": "2026-11-18",
+    "updated": "2026-11-17",
     "generator": "Gen-SkillsIndex.ps1 (frontmatter name/description)",
     "description": "Member index for this plugin (Layer 2). Read the plugin SKILL.md runbook first, then load only the member the task needs."
   },
@@ -11,6 +11,14 @@
       "description": "Durable Claude-specific lessons for running lanes, notifications and hand-overs, each as a short rule, the reason, and the check that proves it (from the 2026-11-14/15 currents-bookkeeping epic session). Use before di...",
       "path": "vendor/cl-orchestration/cl-claude/skills/claude-lane-lessons",
       "entry": "vendor/cl-orchestration/cl-claude/skills/claude-lane-lessons/SKILL.md",
+      "status": "inline",
+      "canonical": null
+    },
+    {
+      "name": "complete-an-epic",
+      "description": "\"Complete an Epic (in <repo>)\" - show the open epics of every product repo (cl-common, currents-bookkeeping, upscale-havens), or only of the named repo, in priority order; wait for the operator to pick; then build the...",
+      "path": "vendor/cl-orchestration/cl-claude/skills/complete-an-epic",
+      "entry": "vendor/cl-orchestration/cl-claude/skills/complete-an-epic/SKILL.md",
       "status": "inline",
       "canonical": null
     },

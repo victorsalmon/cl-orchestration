@@ -4,8 +4,9 @@ description: >
   Front door for runbooks written for Claude (Claude Code) specifically: how
   Claude claims, parallelises, batches and hands over work, plus the durable
   Claude-only lessons that would be noise for another executor. Use when asked
-  for /omnicode (claim beads, build them massively in parallel on worktrees,
-  batch-merge, hand a high-priority merge request to the repo hub), or when
+  for "Complete an Epic (in <repo>)" (menu of open epics by priority, build the
+  picked one, hand it to that repo's merge agent), for /omnicode (claim
+  beads, build them massively in parallel on worktrees, batch-merge, hand a high-priority merge request to the repo hub), or when
   recording or looking up a lesson about how Claude itself works. Pick the
   member below that matches and load only that one.
 triggers:
@@ -13,6 +14,7 @@ triggers:
   - model
   - cl-claude
   - omnicode
+  - complete an epic
   - claude lessons
   - claude lane lessons
 ---
@@ -29,6 +31,7 @@ skill that owns the surface (`git-operations`, `cl-beads`, `paseo-child-agents`,
 
 | Task | Member | Canonical path |
 | :--- | :--- | :--- |
+| "Complete an Epic (in <repo>)": show open epics by priority, build the one picked, park it URGENT on that repo's queue and message its merge agent (merge-common / merge-cbk / hub-uh) | `complete-an-epic` | `$env:CL_REPOS_ROOT\cl-common\vendor\cl-orchestration\cl-claude\skills\complete-an-epic\SKILL.md` |
 | `/omnicode`: claim beads, run them in parallel on worktrees, batch-merge them, send the hub a high-priority "merge this next" | `omnicode` | `$env:CL_REPOS_ROOT\cl-common\vendor\cl-orchestration\cl-claude\skills\omnicode\SKILL.md` |
 | Hand bounded work to Paseo OpenCode Go workers with round-robin keys (what Claude does differently; points at the Paseo owners) | `opencode-go-dispatch` | `$env:CL_REPOS_ROOT\cl-common\vendor\cl-orchestration\cl-claude\skills\opencode-go-dispatch\SKILL.md` |
 | Look up or record a Claude-specific lane lesson (dispatch, notifications, handover, memory) | `claude-lane-lessons` | `$env:CL_REPOS_ROOT\cl-common\vendor\cl-orchestration\cl-claude\skills\claude-lane-lessons\SKILL.md` |
@@ -43,6 +46,8 @@ skill that owns the surface (`git-operations`, `cl-beads`, `paseo-child-agents`,
 - **`cl-claude` vs `cl-beads` / `cl-paseo`.** Those run the beads graph and the
   agent fleet. `omnicode` is one interactive session doing the whole loop once
   for a named bead set, ending in a hand-over to the hub, never a merge.
+  `complete-an-epic` is the epic-level entry: the operator picks from a menu,
+  and the hand-over goes to the repo's merge agent.
 
 ## Red lines
 
@@ -56,6 +61,7 @@ skill that owns the surface (`git-operations`, `cl-beads`, `paseo-child-agents`,
 ```
 vendor\cl-orchestration\cl-claude\
   SKILL.md                              # this front door
+  skills\complete-an-epic\              # canonical: SKILL.md + REFERENCE.md + scripts\epic-menu.mjs
   skills\omnicode\                      # canonical: SKILL.md + REFERENCE.md
   skills\claude-lane-lessons\           # canonical: SKILL.md + references\lessons.md
   skills\opencode-go-dispatch\          # canonical: SKILL.md (pointer-first)
